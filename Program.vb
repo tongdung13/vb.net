@@ -73,7 +73,7 @@ Public Class calculator
     End Function
 
     Public Function Add(a As String, b As String) As String
-        Return a +b
+        Return a + b
     End Function
 End Class
 'end đa hình
@@ -91,8 +91,7 @@ Public Class AbstractDog
 End Class
 'end trừu tượng
 
-' stat implements
-
+' stat implements interface
 ' Định nghĩa một Interface
 Public Interface IFlyable
     Sub Fly()
