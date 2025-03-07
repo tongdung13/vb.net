@@ -2,33 +2,35 @@ Imports System
 
 ' start đóng gói
 Public Class Person
-    Private name As String
-    Private age As Integer
+    Private _name As String
+    Private _age As Integer
 
     Public Sub New(pName As String, pAge As Integer)
-        Me.name = pName
-        Me.age = pAge
+        Me._name = pName
+        Me._age = pAge
     End Sub
 
-    Public Function GetName() As String
-        return name
-    End Function
+    Public Property Name As String
+        Get
+            Return _name
+        End Get
+        Set(value As String)
+            _name = value
+        End Set
+    End Property
 
-    Public Function SetName(pName As String)
-        name = pName
-    End Function
-
-    Public Function GetAge() As Integer
-        Return age
-    End Function
-
-    Public Function SetAge(pAge As Integer)
-        If pAge >= 0 Then
-            age = pAge
-        Else
-            Console.WriteLine("Tuổi phải lớn hơn hoặc bằng 0")
-        End If
-    End Function
+    Public Property Age As Integer
+        Get
+            Return _age
+        End Get
+        Set(value As Integer)
+            If value >= 0 Then
+                _age = value
+            Else
+                Console.WriteLine("Tuổi phải lớn hơn hoặc bằng 0")
+            End If
+        End Set
+    End Property
 End Class
 ' end đóng gối
 
@@ -110,9 +112,9 @@ End Class
 Module Program
     Sub Main(args As String())
         Dim person As New Person("Dung", 5)
-        person.GetName()
-        person.SetAge(-10)
-        Console.WriteLine(person.GetAge())
+        Console.WriteLine(person.Name)
+        person.Age = -10
+        Console.WriteLine(person.Age)
 
         Dim child As New Child()
 
