@@ -71,6 +71,7 @@ Public Class calculator
     Public Function Add(a As Double, b As Double) As Double
         Return a + b
     End Function
+
     Public Function Add(a As String, b As String) As String
         Return a +b
     End Function
