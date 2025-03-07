@@ -1,0 +1,14 @@
+/Volumes/DATA/Fatory/test/bin/Debug/net9.0/test
+/Volumes/DATA/Fatory/test/bin/Debug/net9.0/test.deps.json
+/Volumes/DATA/Fatory/test/bin/Debug/net9.0/test.runtimeconfig.json
+/Volumes/DATA/Fatory/test/bin/Debug/net9.0/test.dll
+/Volumes/DATA/Fatory/test/bin/Debug/net9.0/test.pdb
+/Volumes/DATA/Fatory/test/obj/Debug/net9.0/test.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/DATA/Fatory/test/obj/Debug/net9.0/test.AssemblyInfoInputs.cache
+/Volumes/DATA/Fatory/test/obj/Debug/net9.0/test.AssemblyInfo.vb
+/Volumes/DATA/Fatory/test/obj/Debug/net9.0/test.vbproj.CoreCompileInputs.cache
+/Volumes/DATA/Fatory/test/obj/Debug/net9.0/test.dll
+/Volumes/DATA/Fatory/test/obj/Debug/net9.0/refint/test.dll
+/Volumes/DATA/Fatory/test/obj/Debug/net9.0/test.pdb
+/Volumes/DATA/Fatory/test/obj/Debug/net9.0/test.genruntimeconfig.cache
+/Volumes/DATA/Fatory/test/obj/Debug/net9.0/ref/test.dll
