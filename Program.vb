@@ -1,7 +1,7 @@
 Imports System
 
 ' start đóng gói
-Public Class Person ()
+Public Class Person
     Private name As String
     Private age As Integer
 
@@ -63,7 +63,7 @@ Public Class Dog
 End Class
 
 ' nạp trồng
-Public Class calculator
+Public Class Calculator
     Public Function Add(a As Integer, b As Integer) As Integer
         Return a + b
     End Function
@@ -109,7 +109,17 @@ End Class
 
 Module Program
     Sub Main(args As String())
+        Dim person As New Person("Dung", 5)
+        person.GetName()
+        person.SetAge(-10)
+        Console.WriteLine(person.GetAge())
+
+        Dim child As New Child()
+
         Dim dog = New Dog()
         dog.Eat()  'Output: Chó ăn thịt
+
+        Dim calculator As New Calculator()
+        Console.WriteLine(calculator.Add(3, 2))
     End Sub
 End Module
