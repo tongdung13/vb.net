@@ -35,7 +35,7 @@ End Class
 ' start kế thừa
 Public Class Parent
     Public Sub Eat
-        Console.WriteLine("Chán chằng muốn nói")
+        Console.WriteLine("Chán chẳng muốn nói")
     End Sub
 End Class
 
