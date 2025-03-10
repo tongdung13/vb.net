@@ -125,11 +125,11 @@ Module Program
         Console.WriteLine(calculator.Add(3, 2))
 
         ' using date
-        Dim date1 As DateTime = New DateTime(2025, 3, 1)
+        Dim date1 As DateTime = New DateTime(2025, 3, 1) ' Thêm giờ nếu tính cả giờ
         Dim date2 As DateTime = New DateTime(2025, 3, 10)
 
-        Dim daysDiff As Integer = (date2 - date1).Days
-        Console.WriteLine("Số ngày chênh lệch: " & daysDiff)
+        Dim daysDiff As TimeSpan = date2 - date1
+        Console.WriteLine("Số ngày chênh lệch: " & daysDiff.Days & " ngày " & daysDiff.Hours.ToString("00") & ":" & daysDiff.Minutes.ToString("00") & ":" & daysDiff.Seconds.ToString("00") )
 
     End Sub
 End Module
