@@ -37,14 +37,14 @@ End Class
 ' start kế thừa
 Public Class Parent
     Public Sub Eat
-        Console.WriteLine("Chán chẳng muốn nói")
+        Console.WriteLine("muốn nói")
     End Sub
 End Class
 
 Public Class Child
     Inherits Parent ' dùng Inherits để kế thừa
     Public Sub Speak
-        Console.WriteLine("Mày muốn gì")
+        Console.WriteLine("gì")
     End Sub
 End Class
 ' end kế thừa
@@ -88,7 +88,7 @@ End Class
 Public Class AbstractDog
     Inherits AbstractAnimal
     Public Overrides Sub Speak()
-        Console.WriteLine("Chó chau")
+        Console.WriteLine("Cho nhau")
     End Sub
 End Class
 'end trừu tượng
@@ -123,5 +123,13 @@ Module Program
 
         Dim calculator As New Calculator()
         Console.WriteLine(calculator.Add(3, 2))
+
+        ' using date
+        Dim date1 As DateTime = New DateTime(2025, 3, 1)
+        Dim date2 As DateTime = New DateTime(2025, 3, 10)
+
+        Dim daysDiff As Integer = (date2 - date1).Days
+        Console.WriteLine("Số ngày chênh lệch: " & daysDiff)
+
     End Sub
 End Module
